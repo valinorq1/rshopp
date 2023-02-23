@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style type="text/tailwind">
+        @layer utilities {
+            .nav {
+                @apply relative ml-10 text-gray-500 font-mono font-bold tracking-[1px] hover:text-white
+            }
+            .nav::after{
+                @apply content-[''] bg-pink-500 h-[3px] w-[100%] absolute
+            }
+        }
+    </style> -->
+    <style>
+        .cool-link {
+            display: inline-block;
+            color: #000;
+
+            text-decoration: none;
+        }
+
+        .cool-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: #3b82f6;
+            transition: width .3s;
+        }
+
+        .cool-link:hover::after {
+            width: 100%;
+            transition: width .5s;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="flex flex-col justify-center" style="">
+        <div class="flex flex-row mx-auto">
+
+            <div class="flex align-center text-white">
+                <div class="self-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-4 h-4 text-blue-500">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                </div>
+                <div>
+                    +7-956-777-22-55
+                </div>
+
+            </div>
+            <div class="flex align-center text-white mx-3">
+                <a href="#" class="self-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round"
+                            d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
+                    </svg>
+                </a>
+                <a href="#" class="mx-1 text-black">email@email.com</a>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="flex mx-auto justify-center flex-wrap gap-3" style="background-color:#e2d227;">
+
+        <img src="logo.jpg" alt="razom-shop" class="h-36  sm:h-36 md:h-36 lg:h-48 xl:h-76">
+        <div class="self-center grow flex flex-col mb-3">
+
+
+            <div class="hero bg-gredient-dark h-400px  flex flex-col px-2">
+                <div class="search-box mx-auto my-auto w-full  grow">
+                    <!--sm:w-full md:w-full lg:w-3/4 xl:w-3/4-->
+                    <form class="flex flex-row  grow">
+                        <span
+                            class="flex items-center bg-gray-100 rounded rounded-r-none border-0 px-3 font-bold text-grey-100">🔍</span>
+                        <input
+                            class="h-16 bg-gray-100 text-grey-darker py-2 font-normal text-grey-darkest border border-gray-100 font-bold w-full py-1 px-2 outline-none text-lg text-gray-600"
+                            type="text" placeholder="Что хотим найти?">
+
+                        <button
+                            class="flex items-center bg-gray-100 rounded rounded-l-none border-0 px-3 font-bold text-grey-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                            </svg>
+                        </button>
+                        <span
+                            class="flex items-center bg-gray-100 rounded rounded-l-none border-0 px-3 font-bold text-grey-100">
+                            <button class="text-lg text-white font-bold py-3 bg-blue-500 px-6 rounded">Найти</button>
+                        </span>
+
+                    </form>
+                </div>
+            </div>
+            <!--sm:w-full md:w-full lg:w-3/4 xl:w-3/4-->
+            <div
+                class="mt-30  p-3 flex justify-center gap-5 sm:justify-center md:justify-center lg:justify-end xl:justify-end">
+
+
+                <a href="#" class="cool-link font-bold text-base">Парные кружки</a>
+
+                <a href="#" class="cool-link text-base">Парные кружки</a>
+
+                <a href="#" class="cool-link text-base">Парные кружки</a>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <div class="">
+        <div class="container mx-auto p-10 max-w-screen-lg">
+            <div class="bg-white rounded shadow p-8">
+                <!--  ToastBar  -->
+                <!-- <div class="w-full bg-orange-200 text-yellow-900 px-4 py-2 flex items-center">
+                    <img src="https://svgsilh.com/svg/151889.svg" class="w-10 block pr-2">
+                    <div class="text-sm">Congrats you're eligible for a <b>Coupon Code</b> in this order </div>
+                </div> -->
+                <!-- Order Summary  -->
+                <div>
+                    <h3 class="text-xl mt-4 font-bold">Ваша корзина</h3>
+                    <!--     BOX     -->
+                    <div class="border w-full rounded mt-5 flex p-4 justify-between items-start flex-wrap">
+                        <img src="1.jpg" class="w-24">
+                        <div class="w-2/3">
+                            <h3 class="text-lg font-medium">Парные кружки</h3>
+                            <!--  <p class="text-gray-600 text-xs">Sold by <b>Aashir Khan</b></p>
+                            <h4 class="text-red-700 text-xs font-bold mt-1">Осталось на складе: 2</h4> -->
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-medium"><span class="text-3xl text-purple-800 mt-5">Р</span> 890
+                            </h4>
+                            <!-- <h5 class="text-sm font-bold text-purple-800">60% OFF</h5> -->
+                        </div>
+                        <div class="w-full flex justify-between mt-4">
+                            <button class="text-red-700 hover:bg-red-100 px-2">Удалить</button>
+                            <label class="block uppercase tracking-wide text-gray-700" for="grid-first-name">
+                                Кол-во
+                                <select
+                                    class="ml-3 text-sm  border border-gray-200 text-black p-2 rounded leading-tight"
+                                    id="grid-state">
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- <div class="border w-full rounded mt-5 flex p-4 justify-between items-center flex-wrap">
+                        <img src="https://cdn11.bigcommerce.com/s-tboh32g/images/stencil/1280x1280/products/385314/492280/104C_BlackBlackHQ__07610.1557157866.jpg?c=2?imbypass=on"
+                            class="w-12">
+                        <div class="w-2/3">
+                            <h3 class="text-lg font-medium">Black Hat</h3>
+                            <p class="text-gray-600 text-xs">Sold by <b>Taha Dildar</b></p>
+                            <h4 class="text-red-700 text-xs font-bold mt-1">Only 1 left in stock</h4>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-medium"><sup class="text-lg text-purple-800">$</sup> 20</h4>
+                            <h5 class="text-sm font-bold text-purple-800">40% OFF</h5>
+                        </div>
+                        <div class="w-full flex justify-between mt-4">
+                            <button class="text-red-700 hover:bg-red-100 px-2">DELETE</button>
+                            <label class="block uppercase tracking-wide text-gray-700" for="grid-first-name">
+                                QTY
+                                <select
+                                    class="ml-3 text-sm bg-purple-700 border border-purple-200 text-white p-2 rounded leading-tight"
+                                    id="grid-state">
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div> -->
+                </div>
+                <button
+                    class="px-4 py-4 bg-blue-500 text-white w-full mt-3 rounded shadow font-bold hover:bg-blue-900">PROCEED
+                    TO CHECKOUT SCREEN</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

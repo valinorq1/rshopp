@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js"></script> -->
+    <style>
+        .cool-link {
+            display: inline-block;
+            color: #000;
+
+            text-decoration: none;
+        }
+
+        .cool-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: #3b82f6;
+            transition: width .3s;
+        }
+
+        .cool-link:hover::after {
+            width: 100%;
+            transition: width .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex flex-col justify-center" style="background-color:#1E1F29;height:50px;">
+        <div class="flex flex-row mx-auto">
+
+            <div class="flex align-center text-white">
+                <div class="self-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-4 h-4 text-blue-500">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                </div>
+                <div>
+                    +7-956-777-22-55
+                </div>
+
+            </div>
+            <div class="flex align-center text-white mx-3">
+                <a href="#" class="self-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round"
+                            d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
+                    </svg>
+                </a>
+                <a href="#" class="mx-1">email@email.com</a>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="flex mx-auto justify-center flex-wrap gap-3" style="background-color:#e2d227;">
+
+        <img src="logo.jpg" alt="razom-shop" class="h-36  sm:h-36 md:h-36 lg:h-48 xl:h-76">
+        <div class="self-center grow flex flex-col mb-3">
+
+
+            <div class="hero bg-gredient-dark h-400px  flex flex-col px-2">
+                <div class="search-box mx-auto my-auto w-full  grow">
+                    <!--sm:w-full md:w-full lg:w-3/4 xl:w-3/4-->
+                    <form class="flex flex-row  grow">
+                        <span
+                            class="flex items-center bg-gray-100 rounded rounded-r-none border-0 px-3 font-bold text-grey-100">🔍</span>
+                        <input
+                            class="h-16 bg-gray-100 text-grey-darker py-2 font-normal text-grey-darkest border border-gray-100 font-bold w-full py-1 px-2 outline-none text-lg text-gray-600"
+                            type="text" placeholder="Что хотим найти?">
+
+                        <button
+                            class="flex items-center bg-gray-100 rounded rounded-l-none border-0 px-3 font-bold text-grey-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                            </svg>
+                        </button>
+                        <span
+                            class="flex items-center bg-gray-100 rounded rounded-l-none border-0 px-3 font-bold text-grey-100">
+                            <button class="text-lg text-white font-bold py-3 bg-blue-500 px-6 rounded">Найти</button>
+                        </span>
+
+                    </form>
+                </div>
+            </div>
+            <!--sm:w-full md:w-full lg:w-3/4 xl:w-3/4-->
+            <div
+                class="mt-30  p-3 flex justify-center gap-5 sm:justify-center md:justify-center lg:justify-end xl:justify-end">
+
+
+                <a href="#" class="cool-link font-bold text-base">Парные кружки</a>
+
+                <a href="#" class="cool-link text-base">Парные кружки</a>
+
+                <a href="#" class="cool-link text-base">Парные кружки</a>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <div class="antialiased">
+
+
+        <div class="py-6">
+            <!-- Breadcrumbs -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center space-x-2 text-gray-400 text-sm">
+                    <a href="#" class="hover:underline hover:text-gray-600">Главная</a>
+                    <span>
+                        <svg class="h-5 w-5 leading-none text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                    <a href="#" class="hover:underline hover:text-gray-600">Кружки</a>
+                    <span>
+                        <svg class="h-5 w-5 leading-none text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                    <span>Парные</span>
+                </div>
+            </div>
+            <!-- ./ Breadcrumbs -->
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+                <div class="flex flex-col md:flex-row -mx-4">
+
+
+                    <div class="m px-4">
+                        <div>
+
+                            <div class="w-80 mx-auto  rounded-lg  mb-4 flex items-start justify-start">
+
+                                <img src="1.jpg" class=" " alt="">
+
+                            </div>
+
+
+
+                            <div class="flex -mx-2 mb-4 mx-auto justify-center">
+
+                                <div class="flex px-2">
+                                    <button class="focus:outline-none w-full rounded-lg h-24 md:h-32  flex ">
+                                        <img src="1.jpg" class="h-24" alt="">
+                                    </button>
+                                </div>
+
+                                <div class=" px-2">
+                                    <button class="focus:outline-none w-full rounded-lg h-24 md:h-32  flex ">
+                                        <img src="1.jpg" class="h-24" alt="">
+                                    </button>
+                                </div>
+
+                                <div class=" px-2">
+                                    <button class="focus:outline-none w-full rounded-lg h-24 md:h-32  flex ">
+                                        <img src="1.jpg" class="h-24" alt="">
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="md:flex-1 px-4">
+                        <h2 class="mb-2 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl">
+                            Парные кружки с табличкой</h2>
+
+
+                        <div class="flex items-center space-x-4 my-4">
+                            <div>
+                                <div class="rounded-lg bg-gray-100 flex py-2 px-3">
+                                    <span class="text-indigo-400 mr-1 mt-1">Р</span>
+                                    <span class="font-bold text-indigo-600 text-3xl">740</span>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-green-500 text-xl font-semibold">Выгода 12%</p>
+                                <p class="text-gray-400 text-sm">Временная акция</p>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-500">Если Вы уже зарегистрированы на нашем сайте, но забыли пароль или Вам
+                            не пришло письмо подтверждения, воспользуйтесь формой восстановления пароля.
+                            Если Вы уже зарегистрированы на нашем сайте, но забыли пароль или Вам не пришло письмо
+                            подтверждения, воспользуйтесь формой восстановления пароля.
+                        </p>
+
+                        <div class="flex py-4 space-x-4">
+                            <div class="relative">
+                                <div
+                                    class="text-center left-0 pt-2 right-0 absolute block text-xs uppercase text-gray-400 tracking-wide font-semibold">
+                                    Кол-во</div>
+                                <select
+                                    class="cursor-pointer appearance-none rounded-xl border border-gray-200 pl-4 pr-8 h-14 flex items-end pb-1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+
+                                <svg class="w-5 h-5 text-gray-400 absolute right-0 bottom-0 mb-2 mr-2"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
+                                </svg>
+                            </div>
+
+                            <button type="button"
+                                class="h-14 px-6 py-2 font-semibold rounded-xl bg-blue-500 hover:bg-blue-600 text-white">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
